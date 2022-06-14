@@ -1,14 +1,13 @@
 <%@ page import="Beans.Cancion" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.util.ArrayList" %>
 
 <html>
-    <!--Colocar como value: nombre de la presente página -->
+    <!--Colocar como value: nombre de la presente página  (DOCUMENTO DE NIURKA)-->
     <jsp:include page="/static/head.jsp">
         <jsp:param name="title" value="Lista de Canciones Recomendadas"/>
     </jsp:include>
     <jsp:useBean id="listaCancionesRecomendados" scope="request" type="java.util.ArrayList<Beans.Cancion>"/>
-
-
 
     <body>
         <div class='container'>

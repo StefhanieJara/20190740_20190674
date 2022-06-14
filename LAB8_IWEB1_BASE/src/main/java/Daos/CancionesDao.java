@@ -1,25 +1,17 @@
 package Daos;
 
-import Beans.Banda;
 import Beans.Cancion;
 
 import java.sql.*;
 import java.util.ArrayList;
 
-public class BandaDao {
+//dao creado por niurka
+public class CancionesDao {
     private static String user = "root";
     private static String pass = "root";
     private static String url = "jdbc:mysql://localhost:3306/lab6sw1";
 
-    //En este caso se usa preparedStatement
-    public ArrayList<Banda> obtenerListaBandas(String filter) {
-        ArrayList<Banda> listabandas = new ArrayList<>();
-
-
-
-        return listabandas;
-    }
-
+    //metodo stefhanie
     public ArrayList<Cancion> obtenerCancion (){
         ArrayList<Cancion> listaCancionesRecomendadas= new ArrayList<>();
 
@@ -51,6 +43,8 @@ public class BandaDao {
         return listaCancionesRecomendadas;
     }
 
+    //metodo stefhanie
+
 
     public ArrayList<Cancion> listaCanciones (){
         ArrayList<Cancion> listaCanciones= new ArrayList<>();
@@ -79,7 +73,4 @@ public class BandaDao {
 
         return listaCanciones;
     }
-
-
-
 }
